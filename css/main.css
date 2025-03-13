@@ -37,8 +37,8 @@ body {
 }
 
 img {
-  width: 50px;
-  height: 30px;
+  width: 3.125rem;
+  height: 1.875ren;
 }
 
 h2 {
@@ -54,7 +54,7 @@ p {
   font-family: var(--font-deca);
   font-weight: 400;
   line-height: 1.7;
-  font-size: 14px;
+  font-size: .875rem;
   color: var(--Transparent-white-paragraphs);
   margin: 1.5rem 0;
   max-width: 23ch;
@@ -70,7 +70,7 @@ p {
   border-radius: 2rem;
   font-family: var(--font-deca);
   font-weight: 400;
-  font-size: 15px;
+  font-size: .875rem;
   margin: 3rem 0 1rem 0;
   border: 2px solid transparent;
 }
