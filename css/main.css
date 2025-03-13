@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--Very-light-gray-background-headings-buttons);
+}
+
+/* MAIN */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sedan {
+  border-radius: 0.475rem 0 0 0.475rem;
+  background: var(--Bright-orange);
+}
+
+.sedan div,
+.suv div,
+.luxury div {
+  padding: 2rem;
+}
+
+img {
+  width: 50px;
+  height: 30px;
+}
+
+h2 {
+  font-family: var(--font-big);
+  font-weight: 400;
+  color: var(--Very-light-gray-background-headings-buttons);
+  margin: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--font-deca);
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 14px;
+  color: var(--Transparent-white-paragraphs);
+  margin: 1.5rem 0;
+  max-width: 23ch;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  background: var(--Very-light-gray-background-headings-buttons);
+  text-decoration: none;
+  color: var(--Bright-orange);
+  padding: 12px 24px;
+  border-radius: 2rem;
+  font-family: var(--font-deca);
+  font-weight: 400;
+  font-size: 15px;
+  margin: 3rem 0 1rem 0;
+  border: 2px solid transparent;
+}
+
+.sedan .btn {
+  transition: background .3s;
+}
+
+.sedan .btn:hover {
+  background: var(--Bright-orange);
+  color: var(--Very-light-gray-background-headings-buttons);
+  border: 2px solid ;
+  border-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.suv {
+  background: var(--Dark-cyan);
+}
+
+.suv .btn {
+  color: var(--Dark-cyan);
+  transition: background .3s;
+}
+
+.suv .btn:hover {
+  background: var(--Dark-cyan);
+  color: var(--Very-light-gray-background-headings-buttons);
+  border: 2px solid ;
+  border-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.luxury {
+  border-radius: 0 .475rem .475rem 0;
+  background: var(--Very-dark-cyan);
+}
+.luxury .btn {
+  color: var(--Very-dark-cyan);
+  transition: background .3s;
+}
+
+.luxury .btn:hover {
+  background: var(--Very-dark-cyan);
+  color: var(--Very-light-gray-background-headings-buttons);
+  border: 2px solid ;
+  border-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+@media (max-width: 830px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 3rem 0;
+  }
+  .sedan {
+    border-radius: .475rem .475rem 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 .475rem .475rem;
+  }
+  .btn {
+    margin: 0;
+  }
+}
